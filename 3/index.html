@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>WebGL 2023 - 02 Motion and Color</title>
+
+    <style>
+      html, head, body {
+        margin: 0;
+        padding: 25px;
+        background-color: #2a2a2a;
+      }
+
+      #demo-canvas {
+        width: 800px;
+        height: 800px;
+
+        /*
+         * WebGL trick: pick an offensive canvas background color to test
+         *  opacity/clearing bugs
+         */
+        background-color: #f0f0f0;
+
+        border: 1px dashed #000;
+
+        /* Help to illustrate the rasterizer's job: when artificially lowering resolution, show pixelated image */
+        image-rendering: crisp-edges;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <canvas id="demo-canvas" width="800px" height="800px">
+    </canvas>
+    <script src="index.js"></script>
+  </body>
+</html>
